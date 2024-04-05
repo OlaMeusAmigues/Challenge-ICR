@@ -1,0 +1,204 @@
+[
+    {
+        "id": "a2c2a6dbf521ab76",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2603c25c24add1c5",
+        "type": "serial in",
+        "z": "a2c2a6dbf521ab76",
+        "name": "COM3",
+        "serial": "52e94691b005d687",
+        "x": 70,
+        "y": 220,
+        "wires": [
+            [
+                "4df5cd36e33e0501"
+            ]
+        ]
+    },
+    {
+        "id": "4df5cd36e33e0501",
+        "type": "json",
+        "z": "a2c2a6dbf521ab76",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 210,
+        "y": 220,
+        "wires": [
+            [
+                "e35d6cb3746cd5ef",
+                "49a50654fb63024e",
+                "934e07a7fb8e7be8",
+                "c6bbf1777772e250",
+                "8ad0b32c9f20acf5"
+            ]
+        ]
+    },
+    {
+        "id": "e35d6cb3746cd5ef",
+        "type": "debug",
+        "z": "a2c2a6dbf521ab76",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 180,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "49a50654fb63024e",
+        "type": "change",
+        "z": "a2c2a6dbf521ab76",
+        "name": "Pressão_1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.pressao_1",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 100,
+        "wires": [
+            [
+                "78976dbd7de79ec5"
+            ]
+        ]
+    },
+    {
+        "id": "934e07a7fb8e7be8",
+        "type": "change",
+        "z": "a2c2a6dbf521ab76",
+        "name": "Pressão_2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.pressao_2",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "78976dbd7de79ec5"
+            ]
+        ]
+    },
+    {
+        "id": "c6bbf1777772e250",
+        "type": "change",
+        "z": "a2c2a6dbf521ab76",
+        "name": "Temperatura",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temperatura",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 260,
+        "wires": [
+            [
+                "78976dbd7de79ec5"
+            ]
+        ]
+    },
+    {
+        "id": "8ad0b32c9f20acf5",
+        "type": "change",
+        "z": "a2c2a6dbf521ab76",
+        "name": "Batimentos",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.batimentos",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 340,
+        "wires": [
+            [
+                "78976dbd7de79ec5"
+            ]
+        ]
+    },
+    {
+        "id": "78976dbd7de79ec5",
+        "type": "debug",
+        "z": "a2c2a6dbf521ab76",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "52e94691b005d687",
+        "type": "serial-port",
+        "name": "COM3",
+        "serialport": "COM3",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    }
+]
