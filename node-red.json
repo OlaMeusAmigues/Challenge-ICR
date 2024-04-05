@@ -80,7 +80,9 @@
         "y": 100,
         "wires": [
             [
-                "78976dbd7de79ec5"
+                "78976dbd7de79ec5",
+                "5efbddc944c43cb9",
+                "68791fdedc2aa307"
             ]
         ]
     },
@@ -107,7 +109,9 @@
         "y": 180,
         "wires": [
             [
-                "78976dbd7de79ec5"
+                "78976dbd7de79ec5",
+                "0993bae51545fbef",
+                "68791fdedc2aa307"
             ]
         ]
     },
@@ -134,7 +138,9 @@
         "y": 260,
         "wires": [
             [
-                "78976dbd7de79ec5"
+                "78976dbd7de79ec5",
+                "c1a56bb87e257eca",
+                "13cb6a0d4dc67bba"
             ]
         ]
     },
@@ -161,7 +167,9 @@
         "y": 340,
         "wires": [
             [
-                "78976dbd7de79ec5"
+                "78976dbd7de79ec5",
+                "1a24600c69875ccc",
+                "8ac406481036bdc1"
             ]
         ]
     },
@@ -170,16 +178,330 @@
         "type": "debug",
         "z": "a2c2a6dbf521ab76",
         "name": "debug 2",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 640,
+        "x": 120,
         "y": 100,
         "wires": []
+    },
+    {
+        "id": "68791fdedc2aa307",
+        "type": "ui_chart",
+        "z": "a2c2a6dbf521ab76",
+        "name": "",
+        "group": "dc0d8a95c9f5d10c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Pressão",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "160",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 740,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5efbddc944c43cb9",
+        "type": "ui_gauge",
+        "z": "a2c2a6dbf521ab76",
+        "name": "",
+        "group": "b5e6154d1a352944",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pressão Sistólica",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "90",
+        "max": "140",
+        "colors": [
+            "#ff7a6b",
+            "#e00000",
+            "#610000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 610,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "0993bae51545fbef",
+        "type": "ui_gauge",
+        "z": "a2c2a6dbf521ab76",
+        "name": "",
+        "group": "0b74b0433cc32bd5",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pressão Diastólica",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "60",
+        "max": "90",
+        "colors": [
+            "#ff7a6b",
+            "#e00000",
+            "#610000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 610,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "8ac406481036bdc1",
+        "type": "ui_chart",
+        "z": "a2c2a6dbf521ab76",
+        "name": "",
+        "group": "dc0d8a95c9f5d10c",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Batimentos",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "20",
+        "ymax": "150",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 750,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1a56bb87e257eca",
+        "type": "ui_gauge",
+        "z": "a2c2a6dbf521ab76",
+        "name": "",
+        "group": "b5e6154d1a352944",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "35",
+        "max": "38",
+        "colors": [
+            "#3bbdce",
+            "#9c9c9c",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 590,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1a24600c69875ccc",
+        "type": "ui_gauge",
+        "z": "a2c2a6dbf521ab76",
+        "name": "",
+        "group": "b5e6154d1a352944",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Batimentos",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "50",
+        "max": "90",
+        "colors": [
+            "#03b300",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 590,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "13cb6a0d4dc67bba",
+        "type": "ui_chart",
+        "z": "a2c2a6dbf521ab76",
+        "name": "",
+        "group": "dc0d8a95c9f5d10c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatura",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "20",
+        "ymax": "45",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 750,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9e113f3c65cab64f",
+        "type": "ui_spacer",
+        "z": "a2c2a6dbf521ab76",
+        "name": "spacer",
+        "group": "b5e6154d1a352944",
+        "order": 2,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "fbb80762769d0133",
+        "type": "ui_spacer",
+        "z": "a2c2a6dbf521ab76",
+        "name": "spacer",
+        "group": "b5e6154d1a352944",
+        "order": 3,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "4678900a72a6d701",
+        "type": "ui_spacer",
+        "z": "a2c2a6dbf521ab76",
+        "name": "spacer",
+        "group": "b5e6154d1a352944",
+        "order": 5,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "c5adc24ea7574287",
+        "type": "ui_spacer",
+        "z": "a2c2a6dbf521ab76",
+        "name": "spacer",
+        "group": "b5e6154d1a352944",
+        "order": 6,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "5c1821b3d9303976",
+        "type": "ui_spacer",
+        "z": "a2c2a6dbf521ab76",
+        "name": "spacer",
+        "group": "0b74b0433cc32bd5",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "4486ab25aedaab26",
+        "type": "ui_spacer",
+        "z": "a2c2a6dbf521ab76",
+        "name": "spacer",
+        "group": "dc0d8a95c9f5d10c",
+        "order": 2,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "3b9542c0958a5ce4",
+        "type": "ui_spacer",
+        "z": "a2c2a6dbf521ab76",
+        "name": "spacer",
+        "group": "dc0d8a95c9f5d10c",
+        "order": 4,
+        "width": 9,
+        "height": 1
     },
     {
         "id": "52e94691b005d687",
@@ -200,5 +522,46 @@
         "out": "char",
         "addchar": "",
         "responsetimeout": "10000"
+    },
+    {
+        "id": "dc0d8a95c9f5d10c",
+        "type": "ui_group",
+        "name": "Dados_ao_longo_do_tempo",
+        "tab": "65d583c0208a659b",
+        "order": 3,
+        "disp": true,
+        "width": 9,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b5e6154d1a352944",
+        "type": "ui_group",
+        "name": "Dados_Momentâneos",
+        "tab": "65d583c0208a659b",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0b74b0433cc32bd5",
+        "type": "ui_group",
+        "name": "Dados_momentâneos_2",
+        "tab": "65d583c0208a659b",
+        "order": 2,
+        "disp": false,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "65d583c0208a659b",
+        "type": "ui_tab",
+        "name": "Dados Paciente Teste",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     }
 ]
