@@ -9,7 +9,7 @@ Através dos relatos tanto dos representantes do Instituto da Criança, como de 
  
 
 # Visão geral da solução
-Para esse sprint utilizamos Arduino para simular a coleta e resposta aos dados vitais de um paciente em internação e um servidor Node-red para simular a chegada dos dados à pagina do paciente. Dessa forma, na próxima etapa desse projeto será possível tanto enviar esses dados, através de uma API, para o Whatsapp como para o email ou a página do paciente.
+Para esse sprint utilizamos Arduino para simular a coleta e resposta aos dados vitais de um paciente em internação e um servidor Node-red para simular a chegada dos dados à pagina do paciente. Para a próxima etapa desse projeto, buscamos integrar o banco de dados gerados em Python(incluindo tanto dados vitais como dados pessoais e médicos)ao servidor e tratá-los para serem enviados, através de uma API, para o Whatsapp, email ou para página do paciente, conforme a solicitação de cada paciente.
 
 # Instruções de configuração
 * Instalar a biblioteca: ArduinoJson na sua IDE de Arduino
