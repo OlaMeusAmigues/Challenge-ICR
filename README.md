@@ -24,7 +24,8 @@ Para esse sprint utilizamos Arduino para simular a coleta e resposta aos dados v
 * Acessar o dashboard para acompanhar a atualização dos dados lidos
 
 # Execução da aplicação
-Os dados vitais coletados incluem a pressão(sistólica e diastólica), a temperatura e pressão. O limite defindo em cada dado momentâneo expõe valores saudáveis para o paciente, podendo evidenciar estado de hipotermia ou febre(utilizando temperatura como exemplo) e através dos dados registrados ao longo do tempo é possível ter uma visão geral do quadro do paciente.
+* Sobre a parte física: o Arduino coleta os dados e emite uma luz verde, caso apresentem valores saudáveis, e uma luz vermelha seguido de um apito do buzzer, caso apresente valores anormais
+* Sobre a parte do servidor: os dados vitais coletados incluem a pressão(sistólica e diastólica), a temperatura e pressão. O limite defindo em cada dado momentâneo expõe valores saudáveis para o paciente, podendo evidenciar estado de hipotermia ou febre(utilizando temperatura como exemplo) e através dos dados registrados ao longo do tempo é possível ter uma visão geral do quadro do paciente.
 
 # Link wokwi
 https://wokwi.com/projects/394277514380450817
